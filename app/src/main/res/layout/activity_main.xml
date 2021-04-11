@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/colorBG"
+    >
+
+    <LinearLayout
+        android:background="@color/colorBG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Nereden arama yapmak istersiniz?"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:textAlignment="center"
+            android:visibility="visible"
+            android:gravity="center_horizontal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineBGColor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="@color/colorBG">
+
+        <Button
+            android:id="@+id/btnweb"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_marginBottom="100dp"
+            android:layout_weight="2"
+            android:background="@drawable/google" />
+
+        <Button
+            android:id="@+id/btnTel"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_marginBottom="100dp"
+            android:layout_weight="2"
+            android:background="@drawable/telefon" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
